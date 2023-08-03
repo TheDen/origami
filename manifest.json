@@ -11,13 +11,8 @@
   },
   "content_scripts": [
     {
-      "js": [
-        "scripts/content.js"
-      ],
-      "matches": [
-        "http://wwww.twitter.com/*",
-        "https://twitter.com/*"
-      ],
+      "js": ["scripts/content.js"],
+      "matches": ["http://wwww.twitter.com/*", "https://twitter.com/*"],
       "run_at": "document_end"
     }
   ]

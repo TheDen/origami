@@ -14,7 +14,5 @@
 [![License](https://img.shields.io/github/license/TheDen/origami?style=flat-square)](/LICENSE)
 
 𝕏 (Twitter) Adblocker Chrome Extension
+
 </div>
-
-
-
