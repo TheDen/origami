@@ -15,4 +15,9 @@
 
 𝕏 (Twitter) Adblocker Chrome Extension
 
+Origami illustration by [danishicon](https://thenounproject.com/danishicon/)
+
 </div>
+
+
+
