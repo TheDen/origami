@@ -17,15 +17,17 @@ function waitForElm(selector) {
 }
 
 waitForElm('[aria-label="Share Tweet"]').then((elm) => {
-  var allSpans = document.getElementsByTagName("span");
-  for (let i = 0; i < allSpans.length; i++) {
-    if (allSpans[i].innerText == "Ad") {
-      allSpans[
-        i
-      ].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.remove();
+  setTimeout(function () {
+    var allSpans = document.getElementsByTagName("span");
+    for (let i = 0; i < allSpans.length; i++) {
+      if (allSpans[i].innerText == "Ad") {
+        allSpans[
+          i
+        ].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.remove();
+      }
+      if (allSpans[i].innerText == "Promoted Tweet") {
+        allSpans[i].remove();
+      }
     }
-    if (allSpans[i].innerText == "Promoted Tweet") {
-      allSpans[i].remove();
-    }
-  }
+  }, 1000);
 });
