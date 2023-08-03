@@ -1,0 +1,28 @@
+name: CI/CD
+
+on: push
+
+jobs:
+  misspell:
+    name: runner / misspell
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: misspell
+        uses: reviewdog/action-misspell@v1
+        with:
+          github_token: ${{ secrets.github_token }}
+          locale: 'US'
+          exclude: |
+            ./.git/*
+            ./.vendor/*
+
+  prettier:
+    name: runner / prettier
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Prettify code
+        uses: creyD/prettier_action@v4.3
+        with:
+          prettier_options: --check **/*.json **/*.js **/*.md
