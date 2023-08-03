@@ -14,7 +14,6 @@
 [![CI status](https://img.shields.io/github/actions/workflow/status/TheDen/origami/ci-cd.yml?branch=main&style=flat-square&logo=github)](https://github.com/TheDen/origami/actions?query=branch%3Amain)
 [![License](https://img.shields.io/github/license/TheDen/origami?style=flat-square)](/LICENSE)
 
-
 𝕏 (Twitter) Adblocker Chrome Extension
 
 Origami illustration by [danishicon](https://thenounproject.com/danishicon/)
