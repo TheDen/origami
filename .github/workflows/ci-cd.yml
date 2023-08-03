@@ -15,7 +15,6 @@ jobs:
           locale: 'US'
           exclude: |
             ./.git/*
-            ./.vendor/*
 
   prettier:
     name: runner / prettier
