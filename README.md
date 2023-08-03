@@ -18,6 +18,3 @@
 Origami illustration by [danishicon](https://thenounproject.com/danishicon/)
 
 </div>
-
-
-
