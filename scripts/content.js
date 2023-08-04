@@ -1,33 +1,21 @@
-function waitForElm(selector) {
-  return new Promise((resolve) => {
-    if (document.querySelector(selector)) {
-      return resolve(document.querySelector(selector));
-    }
-    const observer = new MutationObserver((mutations) => {
-      if (document.querySelector(selector)) {
-        resolve(document.querySelector(selector));
-        observer.disconnect();
+function removeAds() {
+  let allSpans = document.getElementsByTagName("span");
+  if (typeof allSpans !== "undefined") {
+    for (let i = 0; i < allSpans.length; i++) {
+      if (typeof allSpans[i].innerText !== "undefined") {
+        if (allSpans[i].innerText == "Ad") {
+          allSpans[
+            i
+          ].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.remove();
+        }
+        if (allSpans[i].innerText == "Promoted Tweet") {
+          allSpans[i].remove();
+        }
       }
-    });
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true,
-    });
-  });
+    }
+  }
 }
 
-waitForElm('[aria-label="Share Tweet"]').then((elm) => {
-  setTimeout(function () {
-    var allSpans = document.getElementsByTagName("span");
-    for (let i = 0; i < allSpans.length; i++) {
-      if (allSpans[i].innerText == "Ad") {
-        allSpans[
-          i
-        ].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.remove();
-      }
-      if (allSpans[i].innerText == "Promoted Tweet") {
-        allSpans[i].remove();
-      }
-    }
-  }, 1000);
-});
+setInterval(function () {
+  removeAds();
+}, 1500);

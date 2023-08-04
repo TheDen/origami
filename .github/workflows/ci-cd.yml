@@ -12,7 +12,7 @@ jobs:
         uses: reviewdog/action-misspell@v1
         with:
           github_token: ${{ secrets.github_token }}
-          locale: 'US'
+          locale: "US"
           exclude: |
             ./.git/*
 

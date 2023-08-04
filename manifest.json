@@ -12,7 +12,8 @@
   "content_scripts": [
     {
       "js": ["scripts/content.js"],
-      "matches": ["http://wwww.twitter.com/*", "https://twitter.com/*"],
+      "matches": ["http://*/*", "https://*/*"],
+      "include_globs": ["*twitter.com/*"],
       "run_at": "document_end"
     }
   ]
