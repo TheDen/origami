@@ -17,6 +17,8 @@
 
 𝕏 (Twitter) Adblocker Chrome Extension
 
+[Install from the Chrome Web Store](https://chrome.google.com/webstore/detail/origami-%F0%9D%95%8F-twitter-adbloc/mpkehcbilcilgafnjhdefebggmdbnhan)
+
 Origami illustration by [danishicon](https://thenounproject.com/danishicon/)
 
 </div>
